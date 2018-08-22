@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+    OnResearch Inc.
+</title>
+    <!-- Bootstrap 3.3.2 -->
+    <link type="text/css" rel="stylesheet" href="assets/plugins/bootstrap-3.3.7/css/bootstrap.min.css" />
+    
+    <!-- Bootstrap Select 1.7.2 -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-select-1.7.2/dist/css/bootstrap-select.min.css" />
+
+    <!-- Font Awesome Icons -->
+    
+    <link rel="stylesheet" href="assets/fonts/font-awesome/font-awesome-4.4.0.min.css" />
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" /> -->
+
+    
+    <!-- Theme style -->
+    <link type="text/css" rel="stylesheet" href="assets/css/AdminLTE.min.css" />
+    <!-- Apply a skin by [1] changing the href of the following link tag and [2] changing the corresponding class on the body tag -->
+
+    
+    <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Drag and Drop styles -->
+    <link type="text/css" rel="stylesheet" href="assets/css/drag-drop.css" />
+
+
+    <!-- REQUIRED JS SCRIPTS -->
+    <!-- jQuery 2.1.3 -->
+    <script type="text/javascript" src="assets/plugins/jquery-2.1.3/jquery-2.1.3.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script type="text/javascript" src="assets/plugins/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Select 1.7.2 -->
+    <script src="assets/plugins/bootstrap-select-1.7.2/dist/js/bootstrap-select.min.js"></script>
+   
+    <!-- SlimScroll -->
+    <!-- <script type="text/javascript" src="assets/plugins/slimScroll/jquery.slimScroll.min.js"></script> -->
+    <!-- AdminLTE App -->
+    <script type="text/javascript" src="assets/js/app.min.js"></script>
+    <!-- OnSurvey Helper -->
+    <script type="text/javascript" src="assets/js/onsurvey.js"></script>
+    <!-- prevent moving back to previous page -->
+    <script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+        $(document).ready(function () {
+            noBack();
+        });
+        $(window).unload(function () {
+            null;
+        });
+    </script>
+
+    <!-- Latest Sortable -->
+    <!-- <script src="https://rubaxa.github.io/Sortable/Sortable.js"></script> -->
+    <script src="assets/plugins/sortable-1.4.2/Sortable.js"></script>
+
+
+    
+    <noscript>
+        <meta http-equiv="refresh" content="2; URL=PageMessage.aspx?code=13" />
+    </noscript>
+</head>
+<body onpageshow="if (event.persisted) noBack();" class="skin-onresearch layout-top-nav">
+    <form name="ANS" method="post" action="Survey.aspx?ckie=true" id="ANS">
+<div>
+
+    
+    
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- main-header -->
+        <header class="main-header">
+            <nav class="navbar navbar-static-top" role="navigation">
+                <div class="container-fluid max-width-md">
+                    <!-- brand logo -->
+                    <div class="navbar-header">
+                        <!-- Image logo -->
+                        <span class="navbar-brand"><img alt="onResearch" src="assets/img/logo-onresearch-white.png" /></span>
+                        <!-- Text logo -->
+                        
+                        <h3 class="navbar-text survey-title"></h3>
+                    </div>
+                    <!-- Progress bar -->
+                    <div id="ctl00_progressMain" class="progress-wrapper">
+                        <div class="progress">
+                            <div id="ctl00_progressBar" class="progress-bar" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" >
+                                <span class="sr-only">(progress)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        <!-- /.main-header -->
+
+
+
+    <article class="content-wrappers bg-muted">
+
+    <!-- content-header -->
+                
+    <!-- /.content-header -->
+            
+                
+    <!-- template start -->
+    <!-- content -->
+    <section class="container-fluid max-width-md">
+
+     
+        
+    <div class="template">
+        <div class="open-text">
+            <div class="survey-question">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                    <h2 id="ctl00_ContentPlaceHolder1_TakeRankControl_QuestionText" class="title">
+                        <span class="text-bold">Arrange the following labels into related groups by dragging and dropping them into the categories below. Rename the categories to indicate how labels are related.</span>
+                    </h2>
+                </div>
+            </div>
+
+
+        
+        <!-- Multi connected lists -->
+        <div id="multi">
+            
+            <!-- first-col - Available Cards -->
+            <div class="layer tile col-md-12 col-xs-12  first-col">
+                <!-- <div class="title-name ">
+                    <div class="textbox ctitle">
+                        <div class="input-group spacing-box">
+                            Available Cards
+                        </div>
+                    </div>
+                </div> -->
+
+
+                <!-- Start List of Cards -->
+                <div class="title-list main-list">
+
+                    <div class="card-obj">
+                        <div class="box equalized">
+                            <div class="textbox">
+                                <span class="drag-handle" data-widget="sort" data-toggle="tooltip" title="" data-original-title="Drag this card into a category"><i class="fa fa-arrows"></i></span>
+                                <div class="input-group spacing-box">
+                                    Graphics
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="card-obj">
+                        <div class="box equalized">
+                            <div class="textbox">
+                                <span class="drag-handle" data-widget="sort" data-toggle="tooltip" title="" data-original-title="Drag this card into a category"><i class="fa fa-arrows"></i></span>
+                                <div class="input-group spacing-box">
+                                    Power Solution
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-obj">
+                        <div class="box equalized">
+                            <div class="textbox">
+                                <span class="drag-handle" data-widget="sort" data-toggle="tooltip" title="" data-original-title="Drag this card into a category"><i class="fa fa-arrows"></i></span>
+                                <div class="input-group spacing-box">
+                                    Process
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-obj">
+                        <div class="box equalized">
+                            <div class="textbox">
+                                <span class="drag-handle" data-widget="sort" data-toggle="tooltip" title="" data-original-title="Drag this card into a category"><i class="fa fa-arrows"></i></span>
+                                <div class="input-group spacing-box">
+                                    Boards and Kits
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-obj">
+                        <div class="box equalized">
+                            <div class="textbox">
+                                <span class="drag-handle" data-widget="sort" data-toggle="tooltip" title="" data-original-title="Drag this card into a category"><i class="fa fa-arrows"></i></span>
+                                <div class="input-group spacing-box">
+                                    Networking
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-obj">
+                        <div class="box equalized">
+                            <div class="textbox">
+                                <span class="drag-handle" data-widget="sort" data-toggle="tooltip" title="" data-original-title="Drag this card into a category"><i class="fa fa-arrows"></i></span>
+                                <div class="input-group spacing-box">
+                                    Software
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-obj">
+                        <div class="box equalized">
+                            <div class="textbox">
+                                <span class="drag-handle" data-widget="sort" data-toggle="tooltip" title="" data-original-title="Drag this card into a category"><i class="fa fa-arrows"></i></span>
+                                <div class="input-group spacing-box">
+                                    Intel® NUCs and Mini PCs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-obj">
+                        <div class="box equalized">
+                            <div class="textbox">
+                                <span class="drag-handle" data-widget="sort" data-toggle="tooltip" title="" data-original-title="Drag this card into a category"><i class="fa fa-arrows"></i></span>
+                                <div class="input-group spacing-box">
+                                    Data Center & Enterprise 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-obj">
+                        <div class="box equalized">
+                            <div class="textbox">
+                                <span class="drag-handle" data-widget="sort" data-toggle="tooltip" title="" data-original-title="Drag this card into a category"><i class="fa fa-arrows"></i></span>
+                                <div class="input-group spacing-box">
+                                    Technologies
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-obj">
+                        <div class="box equalized">
+                            <div class="textbox">
+                                <span class="drag-handle" data-widget="sort" data-toggle="tooltip" title="" data-original-title="Drag this card into a category"><i class="fa fa-arrows"></i></span>
+                                <div class="input-group spacing-box">
+                                    Discontinued Products
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-obj">
+                        <div class="box equalized">
+                            <div class="textbox">
+                                <span class="drag-handle" data-widget="sort" data-toggle="tooltip" title="" data-original-title="Drag this card into a category"><i class="fa fa-arrows"></i></span>
+                                <div class="input-group spacing-box">
+                                    Intel FPGA® Developers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-obj">
+                        <div class="box equalized">
+                            <div class="textbox">
+                                <span class="drag-handle" data-widget="sort" data-toggle="tooltip" title="" data-original-title="Drag this card into a category"><i class="fa fa-arrows"></i></span>
+                                <div class="input-group spacing-box">
+                                    Software Developers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card-obj card-open">
+                        <div class="box equalized">
+                            <div class="textbox">
+                                 <span class="drag-handle" data-widget="sort" data-toggle="tooltip" title="" data-original-title="Drag this card into a category"><i class="fa fa-arrows"></i></span>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="QAns" name="QAns" maxLength="90" placeholder="Type a card name" data-skip="0" autocomplete="off">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-keyboard-o"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+          
+
+                </div>
+                <!--End List of  Cards -->
+
+            </div>
+            <!-- end first-col - Available Cards -->
+                
+
+            <!-- Start Categories - Buckets -->
+
+            <!-- Category1 fixed-->
+            <!-- <div class="box-categories layer tile col-md-4 col-xs-4">
+                <div class="title-name">
+                    <div class="textbox ctitle">
+                        <div class="input-group spacing-box">
+                            Category A
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="title-list col-md-12 cards-container">
+                    
+                    </div>
+                    <div class="box-false box-false-less col-xs-12">
+                        <div class="no-padding"> <div class="box equalized text-center"> Drop Here </div></div>
+                    </div>
+             
+            </div> -->
+
+              <!-- Category1 Open-text -->
+            <div class="box-categories layer tile col-md-4 col-xs-4">
+                <div class="title-name">
+                    <div class="textbox ctitle">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="Category_title" name="Category_title" maxLength="90" placeholder="Type a category name" data-skip="0" autocomplete="off" value="Products">
+                            <div class="input-group-addon">
+                                <i class="fa fa-keyboard-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="title-list col-md-12 col-sm-12 cards-container">
+                    
+                    </div>
+                    <div class="box-false box-false-less col-xs-12">
+                        <div class="no-padding"> <div class="box equalized text-center"> Drop Here </div></div>
+                    </div>
+             
+            </div>
+            
+              <!-- Category2 Open-text -->
+            <div class="box-categories layer tile col-md-4 col-xs-4">
+                <div class="title-name">
+                    <div class="textbox ctitle">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="Category_title" name="Category_title" maxLength="90" placeholder="Type a category name" data-skip="0" autocomplete="off" value="People">
+                            <div class="input-group-addon">
+                                <i class="fa fa-keyboard-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="title-list col-md-12 col-sm-12 cards-container">
+                    
+                    </div>
+                    <div class="box-false box-false-less col-xs-12">
+                        <div class="no-padding"> <div class="box equalized text-center"> Drop Here </div></div>
+                    </div>
+             
+            </div>
+
+
+             <!-- Category3 Open-text -->
+            <div class="box-categories layer tile col-md-4 col-xs-4">
+                <div class="title-name">
+                    <div class="textbox ctitle">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="Category_title" name="Category_title" maxLength="90" placeholder="Type a category name" data-skip="0" autocomplete="off" value="Services">
+                            <div class="input-group-addon">
+                                <i class="fa fa-keyboard-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="title-list col-md-12 col-sm-12 cards-container">
+                    
+                    </div>
+                    <div class="box-false box-false-less col-xs-12">
+                        <div class="no-padding"> <div class="box equalized text-center"> Drop Here </div></div>
+                    </div>
+             
+            </div>
+            
+
+            
+
+            <!-- End Categories - Buckets -->
+
+           
+
+        </div>
+        <!-- Multi connected lists -->
+
+
+
+        <div class="row single-select col-xs-8 col-xs-offset-2 box-options">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="box box-primary equalized">
+                    <div class="radio radio-primary">
+                        <input id="QAns1" type="radio" name="QAns" value="1" data-skip="911" autocomplete="off">
+                        <label for="QAns1">Don't Know / Not Sure</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="box box-primary equalized">
+                    <div class="radio radio-primary">
+                        <input id="QAns2" type="radio" name="QAns" value="2" data-skip="911" autocomplete="off">
+                        <label for="QAns2">Doesn't apply</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+
+    <script type="text/javascript">
+        //To check radio clicks *****************************
+        $('.radio').on('click', function(){
+            var otpm = $('input[name=QAns]:checked').val();
+            if(otpm==1){
+                $('.card-obj').addClass('unselectable');
+                $('.title-name').addClass('uncklicable');
+            }else{
+                $('.card-obj').removeClass('unselectable');
+                $('.title-name').removeClass('uncklicable');
+            }
+        })
+
+        //To block elements add class unselectable *****************************
+        function blockCards(){
+            $(document).ready(function() {
+              $('.unselectable').on('drop', function(event) {
+                event.preventDefault();
+              });
+              $('.unselectable').on('mousedown', function(e) {
+                 e.preventDefault();
+              });
+            });
+        }
+
+        function unblockCards(){
+            $(document).ready(function() {
+              $('.card-obj').on('drop', function() {
+                return true;
+              });
+              $('.card-obj').on('mousedown', function() {
+                 return true;
+              });
+            });
+        }
+        
+
+        //Drag functions starts *****************************
+        function makeDrag(){
+            [].forEach.call(multi.getElementsByClassName('title-list'), function (el){
+            Sortable.create(el, {
+                group: 'listing',
+                animation: 180,
+                onUpdate: function (evt/**Event*/){
+                    var item = evt.item; // the current dragged HTMLElement
+                    //console.log(item);
+                },
+                onFilter: function (evt) {
+                    var el = editableList.closest(evt.item); // get dragged item
+                    el && el.parentNode.removeChild(el);
+                    // console.log(el);
+                    el.classList.add("hide");
+                }
+            });
+
+            });
+        }
+        makeDrag();
+
+
+        //Resizing  Buckets *****************************
+        // function sizingBuckets(){  
+        //     var boxHeight = ($('.main-list').children().length) * ($('.box').height()+13);
+        //     if(boxHeight > $('.main-list').height()){
+        //         $('.title-list, .box-false').css('height', boxHeight + 'px');
+        //     }   
+        // }
+
+       //  var calledsizingBuckets = false;
+       // $(window).scroll(function() {
+       //      if(calledsizingBuckets==false){
+       //          sizingBuckets();
+       //      }
+       //      calledsizingBuckets = true;  
+       //  });       
+       //  $(window).resize(function () {
+       //      setTimeout(sizingBuckets(), 300);
+       //  });
+    
+   
+    // While dragging the p element, change the color of the output text
+        document.addEventListener("drag", function(event) {
+            $('.box-categories .cards-container').addClass('grabbing');
+            $('.box-false').addClass('overbox');
+
+            // if(calledsizingBuckets==false){
+            //     sizingBuckets();
+            // }
+            //calledsizingBuckets = true; 
+
+        });
+
+        // Some efect when finished dragging
+        document.addEventListener("dragend", function(event) {
+            $('.box-categories .title-list').removeClass('grabbing');
+            $('.box-false').removeClass('overbox');
+        });
+
+
+        //Tooltips  *****************************
+        $('.drag-handle').mouseenter(function(){
+            var that = $(this)
+            that.tooltip('show');
+            setTimeout(function(){
+                that.tooltip('hide');
+            }, 2000);
+        });
+
+        $('.drag-handle').mouseleave(function(){
+            $(this).tooltip('hide');
+        });
+
+        //Placeholders into buckets  *****************************
+        // for(i=1; i<= 1;i++){
+        //     $('.box-false').append('<div class="no-padding"> <div class="box equalized text-center"> Drop Here </div></div>')
+        // }
+
+
+
+        $('.box-categories').mouseenter(function(){
+            if($('.cards-container',this).children().length > 0){
+                $('.box-false',this).show();
+                increaseProgress();
+            }else{
+                $('.box-false',this).show();
+            }
+        });
+
+        $('.box-categories').mouseleave(function(){
+            if($('.cards-container',this).children().length > 0){
+                $('.box-false',this).show();
+                increaseProgress();
+            }else{
+                $('.box-false',this).show();
+            }
+        });
+
+        //Progressbar?  *****************************
+        eachCard = Math.round(100  / $('.card-obj').length);
+        console.log(eachCard);
+        function increaseProgress(){
+            console.log($('.box-categories .card-obj').length)
+            var howManyCards = $('.box-categories .card-obj').length;
+            $('.progress-bar').css('width', (eachCard*howManyCards) + '%');
+            if(howManyCards == $('.card-obj').length ){
+                $('.first-col').addClass('first-col-empty');
+            }else{
+                $('.first-col').removeClass('first-col-empty');
+            }
+        }
+
+    </script>
+
+
+    <script type="text/javascript">
+        //EQUALIZE BOX HEIGHT *****************************
+        var gutter = 3;
+        function equalizeBoxHeight() {
+            if ($(window).width() > 750) { 
+                var boxLabelHeights = [];
+                $('.box.equalized').each(function () {
+                    $(this).css('height', 'auto');
+                    boxLabelHeights.push($(this).innerHeight());
+                });
+                var maxBoxLabelHeight = Math.max.apply(Math, boxLabelHeights);
+                $('.box.equalized').each(function () {
+                    $(this).css('height', (maxBoxLabelHeight - gutter) + 'px');
+                });
+
+            } else {
+                $('.box.equalized').each(function () {
+                    $(this).css('height', 'auto');
+                });
+            }
+        }
+        $(document).ready(function () { setTimeout(equalizeBoxHeight(), 300) });
+
+        //ON RESIZE *****************************
+        $(window).resize(function () {
+            setTimeout(equalizeBoxHeight(), 300);
+        });
+    </script>
+
+
+
+
+
+
+    <script type="text/javascript">
+        //placeholder for open-text *****************************
+        $('#multi .open-text input[type="text"]').each(function () { var placeholder = $(this).attr('placeholder'); $(this).attr('placeholder', placeholder); });
+        $('#multi .open-text textarea').each(function () { var placeholder = $(this).attr('placeholder') + ' => ' + $(this).attr('data-skip'); $(this).attr('placeholder', placeholder); });
+        $('#multi .open-text input[type="checkbox"]').each(function () { var html = $(this).siblings('label').html() + '<span style="color:red;"> => ' + $(this).attr('data-skip') + '</span>'; $(this).siblings('label').html(html); });
+    </script>
+
+    <script type="text/javascript">
+        //SINGLE SELECT
+        //highlight pre-selections on load
+        $('.single-select input[type="radio"]').each(function () { if (this.checked) { $(this).closest('.box').addClass('selected');  } });
+        //highlight selections on user action
+        $('.single-select input[type="radio"]').change(function () { $(this).closest('.survey-answer').find('.box').removeClass('selected'); $(this).closest('.box').addClass('selected'); if ($(this).prop('checked')) {  }; });
+        //trigger text field focus for answer type "other"
+        $('.single-select .other input[type="radio"]').click(function () { $(this).closest('.box').find('input[type="text"]').focus(); });
+        $('.single-select .other input[type="text"]').focusin(function () { $(this).closest('.radio').find('input[type="radio"]').prop('checked', true).trigger('change'); }).focusout(function () { if ($(this).val() == '') { $(this).closest('.radio').find('input[type="radio"]').prop('checked', false).trigger('change'); $(this).closest('.box').removeClass('selected'); } });
+
+    </script>
+
+
+
+
+
+    </div>
+        <div class="clearfix"></div>
+        <div class="divider"></div>
+    </div>
+
+
+
+
+
+      
+    </section>
+    <!-- /.content -->
+    <!-- template end -->
+
+
+
+    <!-- content-footer -->
+    <footer class="content-footer">
+        <div class="container-fluid">
+
+            <!-- SURVEY CONTROLS -->
+            <div class="row">
+                <div class="survey-controls">
+                    
+                    
+                    
+                    <div id="ctl00_ContentPlaceHolder1_backBtn" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 back">
+                        <button id="ctl00_ContentPlaceHolder1_bBtn" type="button" role="button" class="btn btn-rounded btn-secondary btn-block"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div id="ctl00_ContentPlaceHolder1_nextBtn" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 next">
+                        <button id="ctl00_ContentPlaceHolder1_nBtn" type="button" role="button" class="btn btn-rounded btn-secondary btn-block"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <script type="text/javascript">
+                // //NEXT BUTTON CLICK UPON ENTER KEYPRESS
+                // $(document).keypress(function (e) { if (e.which == 13) { $('.next button').click(); } });
+                // //SHOW START AND RESUME BUTTONS SIDE BY SIDE IF BOTH ARE PRESENT
+                // if ($('.survey-controls').find('.start, .resume').length > 1) { $('.survey-controls').find('.start, .resume').addClass('col-sm-6').removeClass('col-sm-12'); };
+                // //CENTER AND LENGTHEN THE BACK AND NEXT BUTTONS IF ONLY ONE IS PRESENT
+                // if ($('.survey-controls').find('.back, .next').length < 2) { $('.survey-controls').find('.back, .next').each(function () { this.className = this.className.replace(/-6/g, '-12'); }); };
+
+                // function disagree() {
+                //     location.replace('PageMessage.aspx?code=11');
+                // }
+            </script>
+            <!-- /SURVEY CONRTOLS -->
+
+            <!-- ERROR MESSAGE -->
+            <div class="row">
+                <div class="error-message content max-width-sm center-block">
+                   
+                    <div>
+                       
+                        <div id="error-message" class="alert alert-danger alert-dismissable" role="alert" style="display:none;">
+                          
+                            <h4><i class="icon fa fa-ban"></i> Oops!</h4>
+                            <button type="button" class="close" role="button" title="Dismiss alert">&times;</button>
+                            
+                            <p>Something went wrong. Please provide an answer to this question before moving forward. This alert is dismissable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                //DISMISSABLE ALERT
+                
+               
+                $('#error-message').hide();
+                $('.alert button.close').click(function () { $(this).closest('.alert').hide(); });
+            </script>
+            <!-- /ERROR MESSAGE -->
+        </div>
+        <!-- /.container-fluid -->
+    </footer>
+    <!-- /.content-footer -->
+
+   </article>
+
+        <!-- main-footer -->
+        <footer class="main-footer">
+            <div class="container-fluid max-width-sm">
+                <div class="row">
+                    <div class="col-xs-3 text-sm">
+                        <!--<a href="" target="_blank"></a>&nbsp;|&nbsp;--!>
+                        <a href="http://www.onresearch.com/privacy-policy.html" target="_blank">Privacy</a>
+                    </div>
+                    <div class="col-xs-9 f-right text-muted text-sm">Powered by <a href="http://www.onresearch.com" target="_blank"><img src="assets/img/logo-onresearch-color.png" alt="OnResearch" /></a></div>
+                        </div>
+                    </div>
+            <!-- /.container-fluid -->
+        </footer>
+        <!-- /.main-footer -->
+    </div>
+    <!-- /.wrapper -->
+    
+    </form>
+    <script type="text/javascript">
+        // $('#ANS').submit(function (event) {
+        //     var s = ',' + document.ANS.B.value + ',';
+        //     if (',s,r,n,b,'.indexOf(s) != -1) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // });
+
+        // $(function () {
+        //     $('[data-toggle="tooltip"]').tooltip();
+        // })
+    </script>
+</body>
+</html>
+
